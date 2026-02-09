@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Uploader</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./images/WhatsApp Image 2025-01-20 at 3.55.57 PM.jpeg" alt=""
+          width="200px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#feedback">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <!-- Hidden section for preview and info, initially hidden -->
+    <div id="previewContainer" class="d-flex justify-content-center align-items-center mb-4" style="display: none;">
+      <div class="d-flex align-items-center gap-4">
+        <!-- Image preview -->
+        <div id="imagePreview" class="flex-shrink-0"></div>
+
+        <!-- Image info -->
+        <div id="imageInfo" style="display: none;">
+          <h4>Image Info</h4>
+          <p id="fileName">File Name: </p>
+          <p id="fileSize">File Size: </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row py-5">
+      <div class="col-md-6 gif" style="display: block;">
+        <div class="ms-5 pb-5">
+          <img src="./images/hero.gif" width="350"></img>
+          <h1 style="font-size: 55px;font-weight: 750;">Test Quality of fruit</h1>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <!-- Centered container for the upload button -->
+        <div id="centerContainer" class="d-flex justify-content-center border me-5 mt-5 shadow">
+          <button class="btn btn-lg px-4 py-2 border" id="uploadButton">Upload Image</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container" id="about">
+    <div class="row py-4">
+      <h1>About</h1>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="./images/img/home-fruits.png" alt="Open pomegranate showing seeds" class="img-fluid aboutIMG">
+      </div>
+      <div class="col-md-6">
+        <p class="fs-6">
+          The <span class="fs-5 fw-bold">Fruit Quality Detection and Price Estimation</span> project is a collaborative
+          effort by a group of enthusiastic college students passionate about applying machine learning to solve
+          real-world problems. Our goal is to create a smart and practical system that evaluates the quality of fruits
+          and estimates their price based on various parameters. This project not only enhances our technical skills but
+          also aims to make a meaningful impact on the agricultural and food industry.
+        </p>
+        <p>This project is a reflection of our hard work and dedication as college students, and we hope it serves as a
+          stepping stone for more impactful innovations in the future.</p>
+        <!-- <p><span class="fw-bold">1. Problem Statement :</span></p>
+          <p>Manual quality checking and pricing of fruits can be inconsistent and time-consuming. <br>
+            There is a lack of standardization and transparency in the current processes, which affects farmers, vendors, and consumers.</p>
+          <p></p> -->
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-md-6 py-3">
+        <p><span class="fw-bold">1. Problem Statement :</span></p>
+        <p>Manual quality checking and pricing of fruits can be inconsistent and time-consuming. <br>
+          There is a lack of standardization and transparency in the current processes, which affects farmers, vendors,
+          and consumers.</p>
+        <p><span class="fw-bold">2. Objectives :</span></p>
+        <p>To create a system that standardizes fruit quality evaluation and ensures fair pricing. <br>
+          To gain hands-on experience in machine learning and data analysis.
+        </p>
+        <p><span class="fw-bold">2. Technology Stack :</span></p>
+        <p>We’re using tools and technologies like Python, TensorFlow, OpenCV, and market analysis APIs to build our
+          project.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="./images/img/about-fruits.png" alt="Open pomegranate showing seeds" class="img-fluid aboutIMG">
+      </div>
+    </div>
+    <div class="row py-5">
+      <h1>Key features of our project include:</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card py-5 px-3" style="border-radius: 15px;">
+          <p class="fw-bold" style="text-align: center;">Automated Quality Assessment</p>
+          <p style="text-align: center;">
+            By using image processing and ML techniques, our system can analyze attributes like color, texture, size,
+            and shape to determine fruit quality.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card py-5 px-3" style="border-radius: 15px;">
+          <p class="fw-bold" style="text-align: center;">Dynamic Price Estimation</p>
+          <p style="text-align: center;">
+            We use market trends, quality metrics, and historical data to predict a fair and optimal price for the
+            fruit.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card py-5 px-3" style="border-radius: 15px;">
+          <p class="fw-bold" style="text-align: center;">User-Friendly Interface</p>
+          <p style="text-align: center;">
+            Our platform allows users to upload fruit images and get instant insights on quality and pricing.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card py-5 px-3" style="border-radius: 15px;">
+          <p class="fw-bold" style="text-align: center;">Scalability</p>
+          <p style="text-align: center;">
+            The system is designed to adapt to different types of fruits and regional market conditions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="feedback" id="feedback">
+      <div class="row pt-5">
+        <h1>Feedback</h1>
+        <p>We’re eager to hear your thoughts on our project and how we can make it better. Your feedback is incredibly
+          valuable to us as students learning to develop practical solutions.</p>
+      </div>
+      <div class="row">
+        <p>Here’s how you can help:</p>
+        <div class="col-md-6">
+          <p><span class="fw-bold">1.Feature Suggestions:</span> Share your ideas for additional features or
+            functionalities you’d like to see.</p>
+        </div>
+        <div class="col-md-6">
+          <p><span class="fw-bold">2.Usability Improvements</span> Tell us what you think about the platform’s design
+            and ease of use.</p>
+        </div>
+        <div class="col-md-6">
+          <p><span class="fw-bold">3.Performance Insights</span> *: Let us know if the quality detection and price
+            estimation results meet your expectations.</p>
+        </div>
+        <div class="col-md-6">
+          <p><span class="fw-bold">4.General Feedback</span> Any other suggestions or comments to help us improve.</p>
+        </div>
+      </div>
+      <div>
+        <span>You can send your feedback to [Insert Contact Email] or fill out our feedback form at [Insert Feedback
+          Link]. Your input will help us grow and make this project even more impactful.</span>
+        <form action="">
+          <input type="text" placeholder="Enter your Feedback">
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <div>
+        <h1>Contact</h1>
+        <p>For questions, feedback, or collaborations, feel free to reach out:</p>
+      </div>
+      <div>
+        <form action="">
+          <input type="text" placeholder="Enter Email">
+          <input type="text" placeholder="Enter Phone">
+          <input type="text" placeholder="Enter Website Link">
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

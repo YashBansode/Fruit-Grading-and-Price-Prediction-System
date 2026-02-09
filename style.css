@@ -1,0 +1,201 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6f61;  
+}
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  color: #555;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #ff6f61;
+}
+
+/* Upload Button */
+#uploadButton {
+  background-color: #ff6f61;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+#uploadButton:hover {
+  background-color: #e6554e;
+}
+
+#centerContainer{
+  padding-top: 100px; 
+  padding-bottom: 100px ;
+  border-radius: 25px; 
+}
+
+/* About Section */
+h1 {
+  color: #ff6f61;
+  font-weight: bold;
+}
+.aboutIMG {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 450px;
+  width: 480px;
+}
+.fs-5 {
+  line-height: 1.8;
+}
+.fw-bold {
+  color: #ff6f61;
+}
+
+/* Key Features */
+.features img {
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+.card {
+  border: none; /* Remove the border */
+  border-radius: 15px; /* Rounded corners */
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animations */
+  height: 250px;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.card p.fw-bold {
+  color: #ffffff; /* Bold text color for the title */
+  font-size: 1.2rem; /* Adjust font size */
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #ffffff; /* White text for the description */
+  font-size: 0.95rem; /* Slightly smaller text for the description */
+}
+
+.card:hover p.fw-bold {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Add text shadow on hover */
+}
+.feedback {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 40px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.feedback h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #343a40; /* Dark gray text */
+}
+
+.feedback p {
+  font-size: 1rem;
+  color: #495057; /* Muted gray */
+  margin-bottom: 15px;
+}
+
+.feedback form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.feedback input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.feedback button {
+  background-color: #ff6f61;/* Bootstrap blue */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.feedback button:hover {
+  background-color: #e6554e; /* Darker blue */
+}
+
+.contact {
+  background-color: #e9ecef; /* Slightly darker gray */
+  padding: 40px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.contact h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #343a40; /* Dark gray */
+}
+
+.contact p {
+  font-size: 1rem;
+  color: #495057; /* Muted gray */
+  margin-bottom: 15px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.contact input[type="text"]::placeholder {
+  color: #6c757d; /* Placeholder text color */
+}
+
+.contact form button {
+  background-color: #ff6f61; /* Bootstrap blue */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+  background-color: #e6554e; /* Darker blue */
+}
